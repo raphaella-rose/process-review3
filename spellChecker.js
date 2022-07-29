@@ -1,12 +1,13 @@
 const spellChecker = (word) => {
-  if (word == 'these') {
-    return 'these'
-  } else if (word == 'words') {
-    return 'words'
-  } else {
-    return 'are'
-  }
+  const correctWords = ['these', 'words', 'are'];
+  let correctedWord = '';
+  correctWords.forEach((correctWord) => {
+    if (word == correctWord) {
+      correctedWord = word;
+    }
+  })
 
+  return correctedWord;
 }
 
 module.exports = spellChecker;
