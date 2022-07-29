@@ -13,15 +13,15 @@ describe('spellChecker', () => {
     expect(spellChecker('are')).toBe('are');
   })
 
-  it("returns the word 'these' with the correct spelling when it is spelt incorrectly", () => {
-    expect(spellChecker('thess')).toBe('these');
+  it("returns the word '~thess~' when 'these' is spelt incorrectly" , () => {
+    expect(spellChecker('thess')).toBe('~thess~');
   })
 
-  it("returns the word 'wrds' with the correct spelling when it is spelt incorrectly", () => {
-    expect(spellChecker('wrds')).toBe('words');
+  it("returns the word '~wrds~' when 'words' is spelt incorrectly", () => {
+    expect(spellChecker('wrds')).toBe('~wrds~');
   })
 
-  it("returns the word 'aer' with the correct spelling when it is spelt incorrectly", () => {
-    expect(spellChecker('aer')).toBe('are');
+  it("returns the word '~aer~' when 'are' is spelt incorrectly", () => {
+    expect(spellChecker('aer')).toBe('~aer~');
   })
 })
