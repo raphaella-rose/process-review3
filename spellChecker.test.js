@@ -24,4 +24,8 @@ describe('spellChecker', () => {
   it("returns the word '~aer~' when 'are' is spelt incorrectly", () => {
     expect(spellChecker('aer')).toBe('~aer~');
   })
+
+  it("returns the words 'these words' when they are spelt correctly", () => {
+    expect(spellChecker('these words')).toBe('these words');
+  })
 })
