@@ -8,4 +8,8 @@ describe('spellChecker', () => {
   it("returns the word 'words' when it is spelt correctly", () => {
     expect(spellChecker('words')).toBe('words');
   })
+
+  it("returns the word 'are' when it is spelt correctly", () => {
+    expect(spellChecker('are')).toBe('are');
+  })
 })

@@ -1,8 +1,10 @@
 const spellChecker = (word) => {
   if (word == 'these') {
     return 'these'
-  } else {
+  } else if (word == 'words') {
     return 'words'
+  } else {
+    return 'are'
   }
 
 }
