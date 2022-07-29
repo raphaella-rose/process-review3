@@ -28,4 +28,8 @@ describe('spellChecker', () => {
   it("returns the words 'these words' when they are spelt correctly", () => {
     expect(spellChecker('these words')).toBe('these words');
   })
+
+  it("returns the words 'words are' when they are spelt correctly", () => {
+    expect(spellChecker('words are')).toBe('words are');
+  })
 })
