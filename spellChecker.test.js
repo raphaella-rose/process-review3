@@ -13,7 +13,11 @@ describe('spellChecker', () => {
     expect(spellChecker('are')).toBe('are');
   })
 
-  it("returns the word with the correct spelling when it is spelt incorrectly", () => {
+  it("returns the word 'these' with the correct spelling when it is spelt incorrectly", () => {
     expect(spellChecker('thess')).toBe('these');
+  })
+
+  it("returns the word 'wrds' with the correct spelling when it is spelt incorrectly", () => {
+    expect(spellChecker('wrds')).toBe('words');
   })
 })
