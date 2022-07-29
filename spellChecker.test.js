@@ -12,4 +12,8 @@ describe('spellChecker', () => {
   it("returns the word 'are' when it is spelt correctly", () => {
     expect(spellChecker('are')).toBe('are');
   })
+
+  it("returns the word with the correct spelling when it is spelt incorrectly", () => {
+    expect(spellChecker('thess')).toBe('these');
+  })
 })
