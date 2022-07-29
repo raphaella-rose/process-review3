@@ -20,4 +20,8 @@ describe('spellChecker', () => {
   it("returns the word 'wrds' with the correct spelling when it is spelt incorrectly", () => {
     expect(spellChecker('wrds')).toBe('words');
   })
+
+  it("returns the word 'aer' with the correct spelling when it is spelt incorrectly", () => {
+    expect(spellChecker('aer')).toBe('are');
+  })
 })
